@@ -12,11 +12,10 @@ const secret = process.env.JWT_SECRET
 router.post(
     '/login',
     login,
-    async (req, res) => {
+    (req, res) => {
         let user
 
         if (res.locals.user) {
-            console.log(res.locals.user)
             user = res.locals.user
         } else {
             res.status(400).json({
@@ -45,7 +44,20 @@ router.post(
     }
 )
 
-router.get('/logout')
+router.get('/logout', (req, res) => {
+    if (req.cookies['jwt']) {
+        res
+        .clearCookie('jwt')
+        .status(200)
+        .json({
+            message: 'You have logged out'
+        })
+    } else {
+        res.status(401).json({
+            error: 'Invalid jwt'
+        })
+    }
+})
 
 router.get('/protected', 
     passport.authenticate('jwt', { session: false }),

@@ -1,7 +1,7 @@
 {
   "name": "jwt-cookie",
   "version": "1.0.0",
-  "description": "",
+  "description": "For a medium.com tutorial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,11 +10,9 @@
   "author": "Al Javier",
   "license": "ISC",
   "dependencies": {
-    "argon2": "^0.27.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mariadb": "^2.5.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0"
   },
