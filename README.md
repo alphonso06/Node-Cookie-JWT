@@ -16,8 +16,8 @@ you'll need to store your `USER` and `PASSWORD` values. You'll also need to add
 the `JWT_SECRET` and `JWT_EXPIRATION` values.
 
 ```env
-USER=michael
-PASSWORD=password
+USER=genericGuy
+PASSWORD=Ultr@S3cUr3!
 JWT_SECRET=wow123
 JWT_EXPIRATION_TIME=600000
 ```
