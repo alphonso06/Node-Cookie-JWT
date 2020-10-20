@@ -1,4 +1,4 @@
-const login = async (req, res, next) => {
+const login = (req, res, next) => {
     try {
         const { username, password } = req.body
         
