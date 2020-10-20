@@ -1,6 +1,6 @@
 # Node Cookie JWT Tutorial
 Written for the Medium article: 
-[Passport.js HttpOnly Cookie JWT Authentication](medium.com)
+[Passport.js HttpOnly Cookie JWT Authentication](https://medium.com/@alphonso.javier/building-httponly-cookie-jwt-authentication-with-passport-js-27ec519b99c1)
 
 ## Install
 Clone the repository and install dependencies:
