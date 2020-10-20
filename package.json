@@ -1,0 +1,30 @@
+{
+  "name": "jwt-cookie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./dev.env nodemon --exec babel-node src/server.js"
+  },
+  "author": "Al Javier",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.27.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^2.5.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.5"
+  }
+}
